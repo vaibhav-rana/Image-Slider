@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container pt-5">
+        <h1 class="text-center">Image Slider</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/img1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img4.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img5.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img6.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img7.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 50,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
