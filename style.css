@@ -25,18 +25,11 @@ body{
     border-radius: 7px;
 }
 .swiper-slide-active{
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: .3s;
     box-shadow: 0 0 10px 0.5px;
 
 }
 .swiper-pagination{
     bottom: 0 !important;
-}
-@media(min-width:576px){
-   .swiper-slide-active{
-    transform: scale(1.5);
-    transition: .3s;
-    box-shadow: 0 0 10px 0.5px;
-
 }
